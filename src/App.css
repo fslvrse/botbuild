@@ -1,0 +1,108 @@
+.App {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.your-army {
+  border: 2px solid #ccc;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.your-army h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.bot-collection {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.bot-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+  background-color: white;
+  transition: transform 0.2s;
+}
+
+.bot-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.bot-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.bot-card h3 {
+  margin: 10px 0;
+  color: #333;
+}
+
+.bot-stats {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
+  font-size: 0.9em;
+}
+
+.bot-stats span {
+  background-color: #f5f5f5;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.catchphrase {
+  font-size: 0.8em;
+  color: #666;
+  font-style: italic;
+  margin: 10px 0;
+}
+
+.delete-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.delete-btn:hover {
+  background: darkred;
+}
+
+.sort-bar {
+  margin: 20px 0;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
+
+.sort-bar button {
+  margin: 0 10px;
+  padding: 5px 15px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  background-color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.sort-bar button:hover {
+  background-color: #eee;
+}
