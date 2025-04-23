@@ -9,7 +9,7 @@ function App() {
   const [army, setArmy] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:8001/bots")
+    fetch("https://battle-json-yc0c.onrender.com/bots")
       .then((res) => res.json())
       .then((data) => setBots(data));
   }, []);
@@ -25,7 +25,7 @@ function App() {
   };
 
   const deleteBot = (bot) => {
-    fetch(`http://localhost:8001/bots/${bot.id}`, {
+    fetch(`https://battle-json-yc0c.onrender.com/bots/${bot.id}`, {
       method: "DELETE",
     }).then(() => {
       setBots(bots.filter((b) => b.id !== bot.id));
